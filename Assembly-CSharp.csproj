@@ -53,8 +53,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\scripts\game\dice\Dice.cs" />
+    <Compile Include="Assets\scripts\game\dice\DiceStates.cs" />
     <Compile Include="Assets\scripts\game\dice\DieTurn.cs" />
-    <Compile Include="Assets\scripts\game\player\Controller.cs" />
+    <Compile Include="Assets\scripts\game\player\PlayerController.cs" />
     <Compile Include="Assets\scripts\game\player\PlayerTurns.cs" />
     <Compile Include="Assets\scripts\mainMenu\Buttons.cs" />
     <None Include="Assets\resources\fonts\ubuntu-font-family-0.83\CONTRIBUTING.txt" />
@@ -147,9 +148,6 @@
     </Reference>
     <Reference Include="UnityEngine.Purchasing">
       <HintPath>C:/Users/SDE-05092/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.purchasing@0.0.19/UnityEngine.Purchasing.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.Purchasing">
-      <HintPath>C:/Users/SDE-05092/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.purchasing@0.0.19/Editor/UnityEditor.Purchasing.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.StandardEvents">
       <HintPath>C:/Users/SDE-05092/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
