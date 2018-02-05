@@ -80,6 +80,7 @@
 -r:C:/Users/SDE-05092/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.13/UnityEngine.Analytics.dll
 -r:C:/Users/SDE-05092/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.13/Editor/UnityEditor.Analytics.dll
 -r:C:/Users/SDE-05092/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.purchasing@0.0.19/UnityEngine.Purchasing.dll
+-r:C:/Users/SDE-05092/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.purchasing@0.0.19/Editor/UnityEditor.Purchasing.dll
 -r:C:/Users/SDE-05092/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll
 -r:"C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll"
 -r:"C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Common.dll"
@@ -181,6 +182,7 @@
 Assets/scripts/game/dice/Dice.cs
 Assets/scripts/game/dice/DiceStates.cs
 Assets/scripts/game/dice/DieTurn.cs
+Assets/scripts/game/GuiScript.cs
 Assets/scripts/game/player/PlayerController.cs
 Assets/scripts/game/player/PlayerTurns.cs
 Assets/scripts/mainMenu/Buttons.cs

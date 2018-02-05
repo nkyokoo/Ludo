@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class DieTurn : MonoBehaviour{
 	
-     public void changeSide(int side, GameObject gameObject)
+     public static void changeSide(int side, GameObject gameObject)
      {
 	     Text txt = gameObject.GetComponent<Text>();
 	     
