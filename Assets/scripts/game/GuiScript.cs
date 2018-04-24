@@ -12,21 +12,12 @@ public class GuiScript : MonoBehaviour {
     Random rnd = new Random();
     public int NumberGenerator(int numberOfSides)
     {
-        var lesserProbability = 50;
         int ret;
-        bool keepValue;
-        do
-        {
             ret = rnd.Next(1, numberOfSides);
-            if(ret == 6 || ret == 12){
-                keepValue = rnd.Next(1, 100) > lesserProbability;
-            }else{
-                keepValue = true;
-            }
-        }
-        while(keepValue == false);
+        
         return ret;
     }
+    
     public void rollDice ()
     {
         int rInt = NumberGenerator(6);
@@ -36,7 +27,7 @@ public class GuiScript : MonoBehaviour {
 	
     public void endTurn()
     {
-         PlayerController.NextTurn();
+         TurnController.NextTurn();
         if (state == DiceStates.Rolled)
         {
             state = DiceStates.Roll;
