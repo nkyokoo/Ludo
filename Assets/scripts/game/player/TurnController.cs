@@ -20,7 +20,7 @@ public class TurnController : MonoBehaviour {
 	
 	// Use this for initialization
 
-	void Start ()
+	void Start()
 	{
 	  txt = currentTurnTxt.GetComponent<Text>();
 
@@ -28,7 +28,7 @@ public class TurnController : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update() {
 		if (GuiScript.state == DiceStates.Rolled)
 		{
 			rollDiceBtn.SetActive(false);

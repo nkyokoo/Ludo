@@ -17,8 +17,9 @@ public class GuiScript : MonoBehaviour {
         
         return ret;
     }
+
     
-    public void rollDice ()
+    public void rollDice()
     {
         int rInt = NumberGenerator(6);
         DieTurn.changeSide(rInt, gameObject);
