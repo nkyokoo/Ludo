@@ -7,14 +7,25 @@ using UnityEngine;
 public class Movement : MonoBehaviour {
 
 	Vector3 newPosition;
+	private GameObject playerBrick;
 	
 	void Start() {
+		Player.getPlayer().PlayerCore();
 		newPosition = transform.position;
+		PlayerTeams tempTeam = PlayerController.Controller().currentTeam;
+		Debug.Log(tempTeam);
+		switch (tempTeam)
+		{
+			case PlayerTeams.BLUE:
+				playerBrick = GameObject.Find("Blueplayer1");
+				Debug.Log(playerBrick);
+				break;
+		}
+		
 	}
 	void Update()
 	{
-	
-		
+		Player.getPlayer().PlayerCore();
 		if (Input.GetMouseButtonDown(0))
 		{
 			RaycastHit hit;
@@ -22,7 +33,7 @@ public class Movement : MonoBehaviour {
 			if (Physics.Raycast(ray, out hit))
 			{
 				newPosition = hit.point;
-				transform.position = newPosition;
+			    playerBrick.transform.position = newPosition;
 			
 			}
 		}

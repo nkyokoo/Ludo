@@ -2,9 +2,8 @@
 
 namespace game.player
 {
-    public interface PlayerInterface
+    public interface PlayerControllerInterface
     {
-        void setTeam(PlayerTeams team);
         PlayerTeams getTeam();
     }
 }

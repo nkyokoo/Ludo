@@ -82,6 +82,12 @@ public class TurnController : MonoBehaviour {
 			break;
 				
 		}
+	
 
+	}
+
+	public static PlayerTurns getCurrentTurn()
+	{
+		return currentTurn;
 	}
 }

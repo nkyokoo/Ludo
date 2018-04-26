@@ -1,43 +1,45 @@
-﻿namespace game.player
+﻿using UnityEditor;
+using UnityEngine;
+
+namespace game.player
 {
-    public class PlayerController : PlayerInterface
+    public class PlayerController : PlayerControllerInterface
     {
-        private PlayerTeams currentTeam;
-
-
-        public void setTeam(PlayerTeams team)
-        {
-            currentTeam = team;
-        }
-
+     
+        public PlayerTeams currentTeam = PlayerTeams.RED;
+           
         public PlayerTeams getTeam()
-        {
+        {            
+            Debug.Log(currentTeam);
             return currentTeam;
         }
 
         public static PlayerController Controller()
         {
+            
             var playerController = new PlayerController();
             return playerController;
         }
 
         public void teamManager()
         {
-            var turns = TurnController.currentTurn;
-
+            
+            PlayerTurns turns = TurnController.getCurrentTurn();
+         
+       
             switch (turns)
             {
                 case PlayerTurns.PLAYER1:
-                    setTeam(PlayerTeams.BLUE);
+                    currentTeam = PlayerTeams.BLUE;
                     break;
                 case PlayerTurns.PLAYER2:
-                    setTeam(PlayerTeams.RED);
+                    currentTeam = PlayerTeams.RED;
                     break;
                 case PlayerTurns.PLAYER3:
-                    setTeam(PlayerTeams.GREEN);
+                    currentTeam = PlayerTeams.GREEN;
                     break;
                 case PlayerTurns.PLAYER4:
-                    setTeam(PlayerTeams.YELLOW);
+                    currentTeam = PlayerTeams.YELLOW;
                     break;
             }
         }
