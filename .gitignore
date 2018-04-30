@@ -62,3 +62,6 @@ Library/metadata/12/12fd8a0055b84bb59e84c9835a37e333
 Library/metadata/12/12fd8a0055b84bb59e84c9835a37e333
 Library/PlayerDataCache/Data/boot.config
 *.config
+*.csproj
+*.csproj
+*.asset
