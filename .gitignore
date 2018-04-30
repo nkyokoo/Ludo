@@ -64,3 +64,4 @@ Library/PlayerDataCache/Data/boot.config
 *.config
 *.csproj
 *.asset
+*.json
