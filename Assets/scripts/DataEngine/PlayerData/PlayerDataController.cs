@@ -8,7 +8,7 @@ public class PlayerDataController : MonoBehaviour
 {
 	public void playerData()
 	{
-		string path = @".\data\player.json";
+		string path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\Ludo\data\player.json";
 		List<data> _data = new List<data>();
 		_data.Add(new data()
 		{
@@ -18,9 +18,6 @@ public class PlayerDataController : MonoBehaviour
 		});
 
 		string json = JsonConvert.SerializeObject(_data.ToArray());
-
-//write string to file
-		System.IO.File.WriteAllText(@"D:\path.txt", json);
 
 		try
 		{
