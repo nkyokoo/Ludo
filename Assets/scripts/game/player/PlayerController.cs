@@ -1,4 +1,7 @@
-﻿using UnityEditor;
+﻿using System;
+using System.IO;
+using System.Text;
+using UnityEditor;
 using UnityEngine;
 
 namespace game.player
@@ -21,11 +24,9 @@ namespace game.player
             return playerController;
         }
 
-        public void teamManager()
+        public void teamManager(PlayerTurns turns)
         {
-            
-            PlayerTurns turns = TurnController.getCurrentTurn();
-         
+           
        
             switch (turns)
             {
@@ -42,6 +43,7 @@ namespace game.player
                     currentTeam = PlayerTeams.YELLOW;
                     break;
             }
+           
         }
     }
 }

@@ -27,8 +27,7 @@ namespace game.player
 
         public void PlayerCore()
         {
-            PlayerController controller = new PlayerController();
-            controller.teamManager();
+         
      
         }
     }
