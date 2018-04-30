@@ -33,9 +33,9 @@ Temp/UnityTempFile-3ce13d1cebfa78b41ae77502a548cb9c
 *.user
 *.asset
 *.log
-*.log
 *.db
 *.mdb
+Library/metadata
 Library/metadata/00/00000000000000002000000000000000
 Library/metadata/00/00000000000000003000000000000000
 Library/metadata/00/00000000000000004000000000000000
@@ -62,6 +62,5 @@ Library/metadata/12/12fd8a0055b84bb59e84c9835a37e333
 Library/metadata/12/12fd8a0055b84bb59e84c9835a37e333
 Library/PlayerDataCache/Data/boot.config
 *.config
-*.csproj
 *.csproj
 *.asset
