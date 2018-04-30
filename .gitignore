@@ -65,3 +65,17 @@ Library/PlayerDataCache/Data/boot.config
 *.csproj
 *.asset
 *.json
+*.json
+*.log
+Temp/UnityTempFile-3a4b971465a7a924e93fc75d3afd859a
+Library/shadercompiler-UnityShaderCompiler.exe0.log
+*.mdb
+Library/metadata/bc/bc872c1ba76bd8741ab9776917d38d26
+Library/EditorInstance.json
+Library/assetDatabase3
+Library/shadercompiler-UnityShaderCompiler.exe0.log
+Library/ScriptAssemblies/Assembly-CSharp.dll.mdb
+Library/ProtocolInstance.json
+Library/metadata/bc/bc872c1ba76bd8741ab9776917d38d26
+Library/EditorInstance.json
+Library/assetDatabase3
