@@ -28,7 +28,7 @@ public class GuiScript : MonoBehaviour {
 	
     public void endTurn()
     {
-         TurnController.NextTurn();
+         PlayerController.NextTurn();
         if (state == DiceStates.Rolled)
         {
             state = DiceStates.Roll;

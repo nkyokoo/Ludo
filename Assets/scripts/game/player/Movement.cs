@@ -8,24 +8,18 @@ public class Movement : MonoBehaviour {
 
 	Vector3 newPosition;
 	private GameObject playerBrick;
-	
-	void Start() {
-		Player.getPlayer().PlayerCore();
+
+    void Awake()
+    {
+        PlayerController.teamManager();
+    }
+
+    void Start() {
 		newPosition = transform.position;
-		PlayerTeams tempTeam = PlayerController.Controller().currentTeam;
-		Debug.Log(tempTeam);
-		switch (tempTeam)
-		{
-			case PlayerTeams.BLUE:
-				playerBrick = GameObject.Find("Blueplayer1");
-				Debug.Log(playerBrick);
-				break;
-		}
-		
+
 	}
 	void Update()
 	{
-		Player.getPlayer().PlayerCore();
 		if (Input.GetMouseButtonDown(0))
 		{
 			RaycastHit hit;

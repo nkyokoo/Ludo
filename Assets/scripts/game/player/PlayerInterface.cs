@@ -3,8 +3,9 @@
 namespace game.player
 {
     public interface PlayerInterface
-    {
-        void setName();
+    {   
+        string getName();
+        string getTeam();
         bool isAI();
         
         

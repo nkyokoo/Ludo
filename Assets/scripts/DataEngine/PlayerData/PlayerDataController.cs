@@ -16,7 +16,8 @@ public class PlayerDataController : MonoBehaviour
 
         JObject jobject = new JObject();
 
-      
+		jobject.Add(Player.getPlayer().getName());
+		jobject.Add(Player.getPlayer().getTeam());
 
         try
 		{
@@ -27,10 +28,7 @@ public class PlayerDataController : MonoBehaviour
 			}
 			using (FileStream fs = File.Create(path))
 			{
-                JObject data = jobject.Add(Player.get)
-
-
-               
+			  File.AppendAllText(path, jobject.ToString());
 			}
 
 			using (StreamReader sr = File.OpenText(path))
