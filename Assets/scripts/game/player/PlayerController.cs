@@ -6,6 +6,7 @@ using Assets.scripts.game.dice;
 using game.player;
 using JetBrains.Annotations;
 using UnityEngine;
+using UnityEngine.Experimental.UIElements;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
@@ -13,7 +14,8 @@ public class PlayerController : MonoBehaviour {
 	public static PlayerTeams currentTeam;
 	public static PlayerTurns currentTurn;
 	public GameObject currentTurnTxt;
-	private Text txt;
+    public static GameObject tempbrick;
+    private Text txt;
 	public GameObject rollDiceBtn;
 
 	// Use this for initialization
@@ -31,7 +33,8 @@ public class PlayerController : MonoBehaviour {
 		if (GuiScript.state == DiceStates.Rolled)
 		{
 			rollDiceBtn.SetActive(false);
-		}else if (GuiScript.state == DiceStates.Roll)
+		}
+		else if (GuiScript.state == DiceStates.Roll)
 		{
 			rollDiceBtn.SetActive(true);
 		}
@@ -64,23 +67,30 @@ public class PlayerController : MonoBehaviour {
            
 
 	public static void teamManager()
-	{  
+	{
+	   
 		switch (currentTurn)
 		{
+		        
 			case PlayerTurns.PLAYER1:
 				currentTeam = PlayerTeams.BLUE;
-				break;
+			    List<GameObject> tempBricks = GamePlay.GetGamePlay().getBlueBricks();
+                break;
 			case PlayerTurns.PLAYER2:
 				currentTeam = PlayerTeams.RED;
-				break;
+
+                break;
 			case PlayerTurns.PLAYER3:
 				currentTeam = PlayerTeams.GREEN;
-				break;
+
+                break;
 			case PlayerTurns.PLAYER4:
 				currentTeam = PlayerTeams.YELLOW;
-				break;
+		
+                break;
 		}
-	}
+	    Debug.Log("Current team: " +currentTeam);
+    }
 	public static void NextTurn()
 	{
 		switch (currentTurn)
@@ -104,16 +114,13 @@ public class PlayerController : MonoBehaviour {
 			break;
 				
 		}
-	
+	    Debug.Log("current turn:" + currentTurn);
 
-	}
+    }
 	public static PlayerTurns getCurrentTurn()
 	{
+        
 		return currentTurn;
 	}
 
-    public static GameObject getPlayerBrick()
-    {
-        return playerBrick;
-    }
 }

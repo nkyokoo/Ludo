@@ -4,6 +4,9 @@ namespace game.player
 {
     public class Player : PlayerInterface
     {
+        private string Playername;
+        private string PlayerTeam;
+        private bool ai;
   
         public static Player getPlayer()
         {
@@ -19,17 +22,17 @@ namespace game.player
 
         public string getName()
         {
-            throw new System.NotImplementedException();
+            return Playername;
         }
 
         public string getTeam()
         {
-            throw new System.NotImplementedException();
+            return PlayerTeam;
         }
 
         public bool isAI()
         {
-            throw new System.NotImplementedException();
+            return ai;
         }
     }
 }

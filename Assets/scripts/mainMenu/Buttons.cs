@@ -7,7 +7,7 @@ public class Buttons : MonoBehaviour {
 
 
 	public void startGame () {
-		SceneManager.LoadScene("game");
+		SceneManager.LoadScene("createnewgame");
 		
 	}
 	

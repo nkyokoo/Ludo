@@ -591,7 +591,7 @@ GameObject:
   - component: {fileID: 439993369}
   m_Layer: 0
   m_Name: blueplayer2
-  m_TagString: Untagged
+  m_TagString: blue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -767,9 +767,10 @@ GameObject:
   m_Component:
   - component: {fileID: 869221838}
   - component: {fileID: 869221839}
+  - component: {fileID: 869221840}
   m_Layer: 0
   m_Name: blueplayer1
-  m_TagString: Untagged
+  m_TagString: blue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -831,6 +832,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &869221840
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 869221837}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.8000004, y: 5.1299996, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &875797265
 GameObject:
   m_ObjectHideFlags: 0
@@ -1024,7 +1037,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.495, y: 0}
+  m_AnchoredPosition: {x: 5.494995, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1102367718
@@ -1146,7 +1159,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -476, y: -143}
+  m_AnchoredPosition: {x: -422, y: -153}
   m_SizeDelta: {x: 221.36, y: 94.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1121496135
@@ -1455,7 +1468,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1256944991}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -475, y: -61, z: 519}
+  m_LocalPosition: {x: -421, y: -71, z: 519}
   m_LocalScale: {x: 114.09534, y: 102.39835, z: 79.54729}
   m_Children:
   - {fileID: 1915594520}
@@ -1473,7 +1486,7 @@ GameObject:
   - component: {fileID: 1285779072}
   m_Layer: 0
   m_Name: blueplayer3
-  m_TagString: Untagged
+  m_TagString: blue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1684,7 +1697,7 @@ GameObject:
   - component: {fileID: 1477933585}
   m_Layer: 0
   m_Name: blueplayer4
-  m_TagString: Untagged
+  m_TagString: blue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1854,7 +1867,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -476.38, y: -171}
+  m_AnchoredPosition: {x: -422.38, y: -181}
   m_SizeDelta: {x: 222.11, y: 83.34}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1534168849
@@ -1988,7 +2001,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 981.6, y: -103.3}
+  m_AnchoredPosition: {x: 1014, y: -109.5}
   m_SizeDelta: {x: 289.7, y: 39.5}
   m_Pivot: {x: 4, y: 4}
 --- !u!114 &1569194203
@@ -2216,7 +2229,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -326.60004, y: 237.2}
+  m_AnchoredPosition: {x: -367, y: 222}
   m_SizeDelta: {x: 794.4, y: 289.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1868138310
@@ -2290,7 +2303,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.02, y: 0.01}
+  m_AnchoredPosition: {x: 0, y: 0.06999999}
   m_SizeDelta: {x: 97.757, y: 105.04}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1915594522

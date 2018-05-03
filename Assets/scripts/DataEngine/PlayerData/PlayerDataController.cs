@@ -9,7 +9,7 @@ using UnityEngine;
 
 public class PlayerDataController : MonoBehaviour
 {
-	public void playerData()
+	public void SavePlayerData()
 	{
 		string path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\Ludo\data\player.json";
 
