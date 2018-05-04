@@ -17,10 +17,12 @@ public class PlayerController : MonoBehaviour {
     public static GameObject tempbrick;
     private Text txt;
 	public GameObject rollDiceBtn;
+    public static GamePlay game = new GamePlay();
 
-	// Use this for initialization
 
-	void Start()
+    // Use this for initialization
+
+    void Start()
 	{
 	  txt = currentTurnTxt.GetComponent<Text>();
 
@@ -74,7 +76,8 @@ public class PlayerController : MonoBehaviour {
 		        
 			case PlayerTurns.PLAYER1:
 				currentTeam = PlayerTeams.BLUE;
-			    List<GameObject> tempBricks = GamePlay.GetGamePlay().getBlueBricks();
+			    tempbrick = game.getBlueBrick(0);
+                Debug.Log(tempbrick);
                 break;
 			case PlayerTurns.PLAYER2:
 				currentTeam = PlayerTeams.RED;
@@ -117,10 +120,6 @@ public class PlayerController : MonoBehaviour {
 	    Debug.Log("current turn:" + currentTurn);
 
     }
-	public static PlayerTurns getCurrentTurn()
-	{
-        
-		return currentTurn;
-	}
+
 
 }

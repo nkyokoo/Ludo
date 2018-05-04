@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using game.player;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 namespace Assets.scripts.mainMenu.NewGameMenu
 {
-    class Buttons : ButtonsInterface
+   public class Buttons : MonoBehaviour, ButtonsInterface
     {
+   
         public void StartGame()
         {
            
@@ -25,6 +27,11 @@ namespace Assets.scripts.mainMenu.NewGameMenu
         public void BackButton()
         {
             SceneManager.LoadScene("mainmenu");
+        }
+
+        public void exitGame()
+        {
+          
         }
     }
 }

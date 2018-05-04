@@ -10,5 +10,6 @@ namespace Assets.scripts.mainMenu.NewGameMenu
         void StartGame();
         void SaveConfig();
         void BackButton();
+        void exitGame();
     }
 }
