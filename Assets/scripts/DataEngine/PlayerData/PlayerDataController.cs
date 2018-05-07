@@ -7,7 +7,7 @@ using System.IO;
 using game.player;
 using UnityEngine;
 
-public class PlayerDataController : MonoBehaviour
+public class PlayerDataController
 {
 	public void SavePlayerData()
 	{

@@ -68,8 +68,5 @@ public class GamePlay
         GameObject tempBrick = YellowBricks.ElementAt(number);
         return tempBrick;
     }
-    //public static GamePlay GetGamePlay()
-    //{
-    //    return new GamePlay();
-    //}
+
 }

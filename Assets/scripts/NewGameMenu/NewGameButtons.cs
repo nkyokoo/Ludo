@@ -8,19 +8,16 @@ using UnityEngine.SceneManagement;
 
 namespace Assets.scripts.mainMenu.NewGameMenu
 {
-   public class Buttons : MonoBehaviour, ButtonsInterface
+   public class NewGameButtons : MonoBehaviour, ButtonsInterface
     {
-   
+        PlayerDataController playerDataController = new PlayerDataController();
         public void StartGame()
         {
-           
             SceneManager.LoadScene("game");
             
         }
-
         public void SaveConfig()
         {
-            PlayerDataController playerDataController = new PlayerDataController();
             playerDataController.SavePlayerData();
         }
 
